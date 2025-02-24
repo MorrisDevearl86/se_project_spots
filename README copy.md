@@ -19,4 +19,3 @@ I'm a passionate **Developer** with experience in **HTML & CSS**. I love tacklin
 
 ![Spots](./images/Spots%20Project%203.png) and ()
 
-**Spots** is a **[brief project description]** built with **[technologies used]**. **[skills demonstrated by the project]**. [Spot Project](project_1_repository_link).
