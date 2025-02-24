@@ -7,7 +7,6 @@ I'm a passionate **Developer** with experience in **HTML & CSS**. I love tacklin
 - 🌱 Currently learning: **HTML & CSS**
 - 🔭 Working on: **Project 3 Spots**
 - 🌍 Language(s): **ENGLISH**
-- 📫 How to reach me: **morrisdevearl@gmail.com**
 
 ## My Skills
 
@@ -18,7 +17,7 @@ _Replace the above skill badges with your own skills and expertise. To create mo
 
 ## Featured Projects 💻
 
-### [Project 3 Spots](project_1_link)
+### [Project 3 Spots](https://github.com/MorrisDevearl86/se_project_spots.git)
 
 ![Spots](./images/Spots%20Project%203.png) and ()
 
