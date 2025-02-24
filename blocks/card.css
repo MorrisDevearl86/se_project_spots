@@ -14,10 +14,8 @@
   line-height: 1.2; /* For the line-height of 120% */
   color: #212121;
   text-overflow: ellipsis;
+  white-space: nowrap;
   overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
   margin: 0;
 }
 

@@ -13,7 +13,9 @@
 
 .profile__column {
   display: flex;
+  text-align: center;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 .profile__name {
