@@ -1,24 +1,9 @@
-.card {
-  width: 413px;
-}
-
 .card__image {
   height: 413px;
-  width: 413px;
-  /*width: 100%;*/
+  width: 100%;
   object-fit: cover;
   display: block;
   border-radius: 8px;
-  color: #d9d9d9;
-}
-
-.card__content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 12px;
-  margin: bottom 36px;
-  border: 0px;
 }
 
 .card__title {
@@ -26,21 +11,31 @@
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2; /* For the line-height of 120% */
   color: #212121;
   text-overflow: ellipsis;
-  white-space: nowrap;
   overflow: hidden;
-  width: 190px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin: 0;
+}
+
+.card__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
 }
 
 .card__like-button {
-  background-image: url(../images/heart.svg);
+  background-image: url(../images/Like_Heart_Icon.svg);
   width: 23px;
   height: 20px;
   border: none;
   background-color: transparent;
   opacity: 40%;
+  cursor: pointer;
 }
 
 .card__like-button:hover {
@@ -49,29 +44,11 @@
   opacity: 70%;
 }
 
-.block {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  line-clamp: 3;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-}
+/*↓ This is for Smartphone(s) and Tablet(s) size ↓*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 627px) {
   .card__image {
     height: 288px;
-    width: 100%;
-  }
-
-  .card__content {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .card__title {
-    max-width: 95px;
-    font-size: 16px;
-    line-height: 16px;
+    width: 288px;
   }
 }
