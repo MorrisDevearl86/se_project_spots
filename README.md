@@ -5,10 +5,11 @@
 - Intro
 - Figma
 - Images
+- Video
 
 ## Intro
 
-Spots is made up "Blocks, Element, and Modifier" that are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.
+Spots is made up "Blocks, Element, and Modifier" that are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones. Some of techniques I use would be
 
 ## Figma
 
@@ -16,14 +17,20 @@ Spots is made up "Blocks, Element, and Modifier" that are displayed correctly on
 
 ### Skills
 
-![GIT]https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white
+![GIT](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
 ![HTML](https://img.shields.io/badge/-HTML-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/-CSS-1572B6?style=flat-square&logo=css3&logoColor=white)
 
-## Images/Videos
+## Images
 
-![Spots Desktop](./images/Spots%20Project%203.png) and ![Spots Mobile](<images/Mobile View.png>)
+![Spots Desktop](./images/Spots%20Project%203.png)
 
-**Spots** is a **[User platform]** built with **[Html, CSS, and B.E.M.]**. This project demonstrates my ability to **[Flexbox, GRID, B.E.M. ]**. You can check out the repository [Project 3 Spots](https://github.com/MorrisDevearl86/se_project_spots.git).
+#### Mobile Version
 
-Good luck and have fun!
+![Spots Mobile](<images/Mobile View.png>)
+
+#### Video
+
+![Video] ()
+
+**Spots** is a **User platform** built with **HTML, CSS, and B.E.M.**. This project demonstrates my ability to **Flexbox, GRID, B.E.M**. You can check out the repository [Project 3 Spots](https://github.com/MorrisDevearl86/se_project_spots.git).

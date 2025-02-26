@@ -14,11 +14,28 @@
   border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
 }
 
-/*↓ This is for Smartphone(s) and Tablet(s) size ↓*/
+/*↓ This is for Tablet size ↓*/
 
-@media screen and (max-width: 627px) {
+@media screen and (max-width: 768px) {
+  .cards__list {
+    flex-direction: column;
+    width: 100px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 628px) {
+  .cards__list {
+    display: flex;
+    width: 288px;
+    flex-direction: column;
+    grid-template-columns: repeat(auto-fit, 288px);
+  }
+}
+
+@media screen and (max-width: 320px) {
   .cards__list {
     grid-template-columns: repeat(auto-fit, 288px);
-    justify-content: center;
   }
 }
