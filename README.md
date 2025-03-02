@@ -2,26 +2,24 @@
 
 ## Overview
 
-- Intro
-- Figma
-- Images
-- Video
+**Project Spots** is a responsive web application featuring an adaptive card layout system using semantic **HTML**, **BEM**, **Flexbox**, **GRID**, and organized **CSS** architecture. **[Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)** is a developer website that I use for the project.
 
-## Intro
+#### **Features**
 
-Spots is made up "Blocks, Element, and Modifier" that are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones. Some of techniques I use would be
+- **Card Layout**: Flexible grid-based card system for displaying content
+- **Adaptive Design**: Seamlessly responds to various screen sizes
+- **Semantic HTML**: Proper use of HTML5 elements for improved accessibility
+- **BEM Methodology**: Block-Element-Modifier approach for maintainable CSS
+- **CSS Organization**: Modular architecture with separate files for base, components, and utilities
+- **Typography**: Clean, readable font hierarchy using system fonts
 
-### Skills
+#### **Skills**
 
 ![GIT](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
 ![HTML](https://img.shields.io/badge/-HTML-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/-CSS-1572B6?style=flat-square&logo=css3&logoColor=white)
 
-## [Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
-
-**Project Spots** is a User platform built with **HTML, CSS, and B.E.M.**. This project demonstrates my ability to **Flexbox, GRID, B.E.M**. You can check out the repository [Project 3 Spots](https://github.com/MorrisDevearl86/se_project_spots.git).
-
-### Images
+## Images
 
 ![Spots Desktop](./images/Desktop%20View.png)
 
