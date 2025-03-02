@@ -10,10 +10,3 @@
   /* width: 100%; */
   margin: 0 auto;
 }
-
-@media screen and (max-width: 627px) {
-@media screen and (max-width: 627px) {
-  .page__section {
-    max-width: 627px;
-  }
-}
