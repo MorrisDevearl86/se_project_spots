@@ -29,4 +29,4 @@
 
 ## Deployment
 
-Here the [**Link**](https://morrisdevearl86.github.io/se_project_spots/):
+Here the [**Link**](https://morrisdevearl86.github.io/se_project_spots/)
