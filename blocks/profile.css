@@ -91,6 +91,7 @@
     align-items: center;
     text-align: center;
     margin: 0 auto;
+    padding-top: 20px;
   }
 
   .profile__avatar {
@@ -113,12 +114,17 @@
   .profile__description {
     margin-bottom: 32px;
     padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100px;
   }
 
   .profile__name {
-    display: flex;
     font-size: 20px;
-    justify-content: center;
     margin: 0 0 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }

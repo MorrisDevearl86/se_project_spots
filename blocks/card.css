@@ -15,7 +15,7 @@
   font-weight: 500;
   margin: 0;
   width: 335px;
-  line-height: 1.5; /* For the line-height of 120% */
+  line-height: 1.2; /* For the line-height of 120% */
   color: #212121;
   text-wrap: nowrap;
   text-overflow: ellipsis;
@@ -58,5 +58,7 @@
 
   .card__title {
     width: 195px;
+    font-size: 16px;
+    line-height: 16px;
   }
 }
