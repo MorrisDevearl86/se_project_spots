@@ -114,17 +114,11 @@
   .profile__description {
     margin-bottom: 32px;
     padding: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
     width: 100px;
   }
 
   .profile__name {
     font-size: 20px;
     margin: 0 0 6px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 }
