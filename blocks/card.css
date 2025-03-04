@@ -14,9 +14,9 @@
   font-style: normal;
   font-weight: 500;
   margin: 0;
-  font-size: 20px
+  font-size: 20px;
   width: 335px;
-  line-height: 1.2; /* For the line-height of 120% */
+  line-height: 120%;
   color: #212121;
   text-wrap: nowrap;
   text-overflow: ellipsis;

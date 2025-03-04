@@ -24,6 +24,7 @@
   color: #212121;
   max-width: 420px;
   letter-spacing: 0;
+  display: -webkit-box;
   text-overflow: ellipsis;
   overflow: hidden;
   display: -webkit-box;
@@ -40,6 +41,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
+  display: -webkit-box;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -125,7 +127,6 @@
     margin-bottom: 32px;
     font-size: 0.9rem;
     width: 100%;
-    -webkit-line-clamp: 3;
   }
 
   .profile__name {
