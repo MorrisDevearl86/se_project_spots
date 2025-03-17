@@ -24,6 +24,12 @@
   color: #212121;
   max-width: 420px;
   letter-spacing: 0;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .profile__description {
@@ -35,6 +41,12 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
+  display: -webkit-box;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
 }
 
 .profile__edit-button {
@@ -91,6 +103,7 @@
     align-items: center;
     text-align: center;
     margin: 0 auto;
+    padding-top: 20px;
   }
 
   .profile__avatar {
@@ -113,12 +126,11 @@
   .profile__description {
     margin-bottom: 32px;
     padding: 0;
+    width: 100%;
   }
 
   .profile__name {
-    display: flex;
     font-size: 20px;
-    justify-content: center;
     margin: 0 0 6px;
   }
 }
