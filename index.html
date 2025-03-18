@@ -120,21 +120,32 @@
       <footer class="footer">
         <p class="footer__copyright">2025 &copy; Spots</p>
       </footer>
-      <div class="modal">
+      <div class="modal modal_opened">
         <div class="modal__container">
           <button type="submit" class="modal__close-button"></button>
+
           <h2 class="modal__title">Edit profile</h2>
           <form name="edit-profile" class="modal__form">
             <label for="name" class="modal__label"
               >Name
-              <input id="name" type="text" class="modal__label" />
+              <input
+                id="name"
+                type="text"
+                class="modal__label"
+                placeholder="Name"
+              />
             </label>
 
             <label for="name" class="modal__label"
               >Description
-              <input id="Description" type="text" class="modal__label" />
+              <input
+                id="description"
+                type="text"
+                class="modal__label"
+                placeholder="Description"
+              />
             </label>
-            <button type="submit" class="modal__submitted-button"></button>
+            <button type="submit" class="modal__submitted-button">Save</button>
           </form>
         </div>
       </div>
