@@ -34,7 +34,8 @@
   height: 40px;
   border: none;
   background-color: transparent;
-  background-image: ../images/close;
+  background-image: url(../images/close-image.png);
+  opacity: 40%;
 }
 
 .modal__title {
@@ -59,6 +60,9 @@
   width: 156px;
   padding: 18px 0;
   display: block;
+  border-radius: 8px;
+  padding: 18px 32px;
+  gap: 8px;
 }
 
 .modal__input {
