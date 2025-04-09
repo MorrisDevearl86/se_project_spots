@@ -16,16 +16,6 @@ editProfileCloseButton.addEventListener("click", function () {
 
 // New Post Button ↓↓↓
 
-const newPostProfileButton = document.querySelector(".profile__edit-button");
-const newPostProfileModal = document.querySelector("#new-post-modal");
-const newPostProfileCloseButton = newPostProfileModal.querySelector(
-  ".modal__close-button"
-);
-
-newPostProfileButton.addEventListener("click", function () {
-  newPostProfileModal.classList.add("modal_is-opened");
-});
-
-newPostProfileCloseButton.addEventListener("click", function () {
-  newPostProfileModal.classList.remove("modal_is-opened");
-});
+const newPostButton = document.querySelector(".");
+const newPostModal = document.querySelector;
+const newPostCloseButton = document.querySelector;
