@@ -13,13 +13,13 @@
   visibility: hidden;
 }
 
-.modal_opened {
+.modal_is-opened {
   visibility: visible;
 }
 
 .modal__container {
   background-color: #fff;
-  padding: 32px 50px 32px 50px;
+  padding: 32px 50px;
   max-width: 730px;
   width: 100%;
   box-sizing: border-box;
@@ -50,6 +50,11 @@
   line-height: 1;
 }
 
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
 .modal__label {
   display: flex;
   flex-direction: column;
@@ -60,11 +65,14 @@
 }
 
 .modal__input {
-  padding: 16px 12px;
   display: block;
-  border-radius: 8px;
-  opacity: 40%;
-  border: 1px solid #212121;
+  padding: 16px 12px;
+  margin-top: auto;
+  width: 100%;
+}
+
+.modal__input::placeholder {
+  color: #2121214d;
 }
 
 .modal__submit-button {
