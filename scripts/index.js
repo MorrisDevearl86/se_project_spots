@@ -1,4 +1,38 @@
-//Edit Profile Button ↓↓↓
+// cards information ↓↓↓
+
+const initialCards = [
+  {
+    name: "Val Thorens",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/1-photo-by-moritz-feldmann-from-pexels.jpg",
+  },
+
+  {
+    name: "Restaurant terrace",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/2-photo-by-ceiline-from-pexels.jpg",
+  },
+
+  {
+    name: "An outdoor cafe",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/3-photo-by-tubanur-dogan-from-pexels.jpg",
+  },
+
+  {
+    name: "A very long bridge, over the forest and through the trees",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/4-photo-by-maurice-laschet-from-pexels.jpg",
+  },
+
+  {
+    name: "Tunnel with morning light",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/5-photo-by-van-anh-nguyen-from-pexels.jpg",
+  },
+
+  {
+    name: "Mountain house",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/6-photo-by-moritz-feldmann-from-pexels.jpg",
+  },
+];
+
+// Modal edit profile inputs ↓↓↓
 
 const editProfileButton = document.querySelector(".profile__edit-button");
 const editProfileModal = document.querySelector("#edit-profile-modal");
@@ -6,14 +40,17 @@ const editProfileCloseButton = editProfileModal.querySelector(
   ".modal__close-button"
 );
 
-// input information ↓↓↓
-
-const editProfileNameInput = editProfileModal.querySelector(
-  "#profile-name-input"
-);
 const editProfileDescriptionInput = editProfileModal.querySelector(
   "#profile-description-input"
 );
+
+const editProfileForm = editProfileModal.querySelector(".modal__form");
+const editProfileNameInput = editProfileModal.querySelector(
+  "#profile-name-input"
+);
+
+const profileNameEl = document.querySelector(".profile__name");
+const profileDescriptionEl = document.querySelector(".profile__description");
 
 editProfileButton.addEventListener("click", function () {
   editProfileNameInput.value = profileNameEl.textContent;
@@ -25,12 +62,17 @@ editProfileCloseButton.addEventListener("click", function () {
   editProfileModal.classList.remove("modal_is-opened");
 });
 
-//Auto-Fill name and description ↓↓↓
+function handleEditProfileSubmit(e) {
+  e.preventDefault();
+  console.log("submitting");
+  profileNameEl.textContent = editProfileNameInput.value;
+  profileDescriptionEl.textContent = editProfileDescriptionInput.value;
+  editProfileModal.classList.remove("modal_is-opened");
+}
 
-const profileNameEl = document.querySelector(".profile__name");
-const profileDescriptionEl = document.querySelector(".profile__description");
+editProfileForm.addEventListener("submit", handleEditProfileSubmit);
 
-// + New Post Button ↓↓↓
+// Modal + new post profile inputs
 
 const newPostButton = document.querySelector(".profile__add-button");
 const newPostModal = document.querySelector("#new-post-modal");
@@ -43,3 +85,23 @@ newPostButton.addEventListener("click", function () {
 newPostCloseButton.addEventListener("click", function () {
   newPostModal.classList.remove("modal_is-opened");
 });
+
+// Modal cards template ↓↓↓
+
+const cardTemplate = document.querySelector("#card-template");
+const cardsList = document.querySelector(".cards__list");
+
+function getCardEl(data) {
+  const cardEl = cardTemplate.content.querySelector(".card").cloneNode(true);
+  const cardNameEl = cardEl.querySelector(".card__title");
+  cardNameEl.textContent = data.name;
+  const cardImageEl = cardEl.querySelector(".card__image");
+  cardImageEl.src = data.link;
+  cardImageEl.alt = data.name;
+  return cardEl;
+}
+
+for (let i = 0; i < initialCards.length; i++) {
+  const cardEl = getCardEl(initialCards[i]);
+  cardsList.prepend(cardEl);
+}
