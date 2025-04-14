@@ -44,6 +44,12 @@
   padding: 0px;
 }
 
+.modal__close-button:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 .modal__title {
   margin: 0 0 32px;
   width: 169;
@@ -74,6 +80,12 @@
   margin-top: auto;
   border: 1px solid #21212166;
   border-radius: 8px;
+}
+
+.modal__input:hover {
+  border-color: #212121;
+  box-shadow: 0 0 6px rgba(33, 33, 33, 0.2);
+  cursor: pointer;
 }
 
 .modal__input::placeholder {

@@ -64,7 +64,6 @@ editProfileCloseButton.addEventListener("click", function () {
 
 function handleEditProfileSubmit(e) {
   e.preventDefault();
-  console.log("submitting");
   profileNameEl.textContent = editProfileNameInput.value;
   profileDescriptionEl.textContent = editProfileDescriptionInput.value;
   editProfileModal.classList.remove("modal_is-opened");
@@ -96,12 +95,16 @@ function getCardEl(data) {
   const cardNameEl = cardEl.querySelector(".card__title");
   cardNameEl.textContent = data.name;
   const cardImageEl = cardEl.querySelector(".card__image");
+
   cardImageEl.src = data.link;
   cardImageEl.alt = data.name;
+
   return cardEl;
 }
 
-for (let i = 0; i < initialCards.length; i++) {
-  const cardEl = getCardEl(initialCards[i]);
+initialCards.forEach((cardItem, i, arr) => {
+  console.log(i);
+  console.log(arr);
+  const cardEl = getCardEl(cardItem);
   cardsList.prepend(cardEl);
-}
+});

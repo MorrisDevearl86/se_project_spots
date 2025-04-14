@@ -45,6 +45,15 @@
   opacity: 100%;
 }
 
+/*.card__like-button_liked {
+  background-image: url(../images/heart=Liked.svg);
+  opacity: 1;
+}
+
+.card__like-button_liked:hover {
+  background-image: url(../images/hover=heart\ 2.svg);
+}*/
+
 /*↓ This is for Smartphone(s) and Tablet(s) ↓*/
 
 @media screen and (max-width: 627px) {
