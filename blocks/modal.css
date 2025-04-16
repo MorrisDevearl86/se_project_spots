@@ -104,6 +104,12 @@
   line-height: 100%;
 }
 
+.modal__submit-button:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 @media screen and (max-width: 627px) {
   .modal {
     padding: 0 10px;
