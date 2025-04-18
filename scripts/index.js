@@ -108,3 +108,8 @@ initialCards.forEach((cardItem, i, arr) => {
   const cardEl = getCardEl(cardItem);
   cardsList.prepend(cardEl);
 });
+
+for (let i = 0; i < initialCards.length; i++) {
+  const cardEl = getCardEl(initialCards[i]);
+  cardsList.prepend(cardEl);
+}
