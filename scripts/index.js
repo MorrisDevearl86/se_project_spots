@@ -106,5 +106,5 @@ initialCards.forEach((cardItem, i, arr) => {
   console.log(i);
   console.log(arr);
   const cardEl = getCardEl(cardItem);
-  cardsList.prepend(cardEl);
+  cardsList.prepend(cardEl);  
 });
