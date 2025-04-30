@@ -90,6 +90,26 @@ newPostCloseButton.addEventListener("click", function () {
 const cardTemplate = document.querySelector("#card-template");
 const cardsList = document.querySelector(".cards__list");
 
+const cardNameInput = document.getElementById("cardNameInput");
+const cardLinkInput = document.getElementById("cardLinkInput");
+const addCardForm = document.getElementById("addCardForm");
+const addCardModal = document.getElementById("addCardModal");
+const closeModalBtn = document.getElementById("closeModalBtn");
+
+function handleAddCardSubmit(e) {
+  e.preventDefault();
+  console.log(cardNameInput.value);
+  console.log(cardLinkInput.value);
+  closeModal();
+}
+
+function closeModal() {
+  addCardModal.style.display = "none";
+}
+
+addCardForm.addEventListener("submit", handleAddCardSubmit);
+closeModalBtn.addEventListener("click", closeModal);
+
 function getCardEl(data) {
   const cardEl = cardTemplate.content.querySelector(".card").cloneNode(true);
   const cardNameEl = cardEl.querySelector(".card__title");
@@ -106,5 +126,5 @@ initialCards.forEach((cardItem, i, arr) => {
   console.log(i);
   console.log(arr);
   const cardEl = getCardEl(cardItem);
-  cardsList.prepend(cardEl);  
+  cardsList.prepend(cardEl);
 });
