@@ -94,7 +94,35 @@ newPostModal.classList.remove("modal_is-opened");
 const cardTemplate = document.querySelector("#card-template");
 const cardsList = document.querySelector(".cards__list");
 
+<<<<<<< HEAD
 function getCardElement(data) {
+=======
+const cardNameInput = document.getElementById("cardNameInput");
+const cardLinkInput = document.getElementById("cardLinkInput");
+const addCardForm = document.getElementById("addCardForm");
+const addCardModal = document.getElementById("addCardModal");
+const closeModalBtn = document.getElementById("closeModalBtn");
+
+function handleAddCardSubmit(e) {
+  e.preventDefault();
+  console.log(cardNameInput.value);
+  console.log(cardLinkInput.value);
+  closeModal();
+}
+
+function closeModal() {
+  addCardModal.style.display = "none";
+}
+
+addCardForm.addEventListener("submit", handleAddCardSubmit);
+closeModalBtn.addEventListener("click", closeModal);
+
+function getCardEl(data) {
+  const cardEl = cardTemplate.content.querySelector(".card").cloneNode(true);
+  const cardNameEl = cardEl.querySelector(".card__title");
+  cardNameEl.textContent = data.name;
+  const cardImageEl = cardEl.querySelector(".card__image");
+>>>>>>> a36aa0139460fb29b41779f189319fecee92f2be
 
   const cardElement = cardTemplate.content.querySelector(".card").cloneNode(true);
   const cardImageElement = cardElement.querySelector(".card__image");
