@@ -94,14 +94,12 @@ newPostModal.classList.remove("modal_is-opened");
 const cardTemplate = document.querySelector("#card-template");
 const cardsList = document.querySelector(".cards__list");
 
-<<<<<<< HEAD
 function getCardElement(data) {
-=======
 const cardNameInput = document.getElementById("cardNameInput");
 const cardLinkInput = document.getElementById("cardLinkInput");
 const addCardForm = document.getElementById("addCardForm");
 const addCardModal = document.getElementById("addCardModal");
-const closeModalBtn = document.getElementById("closeModalBtn");
+const closeModalBtn = document.getElementById("closeModalBtn");}
 
 function handleAddCardSubmit(e) {
   e.preventDefault();
@@ -122,7 +120,7 @@ function getCardEl(data) {
   const cardNameEl = cardEl.querySelector(".card__title");
   cardNameEl.textContent = data.name;
   const cardImageEl = cardEl.querySelector(".card__image");
->>>>>>> a36aa0139460fb29b41779f189319fecee92f2be
+
 
   const cardElement = cardTemplate.content.querySelector(".card").cloneNode(true);
   const cardImageElement = cardElement.querySelector(".card__image");
@@ -160,7 +158,7 @@ function getCardEl(data) {
 
   previewCaptionElement.textContent = data.name;
     openModal(previewModal);
-  });
+  };
 
 const closeButton = document.querySelector('.modal-close');
 
