@@ -69,7 +69,11 @@ function handleEditProfileSubmit(e) {
 
   profileNameElement.textContent = editProfileNameInput.value;
   profileDescriptionElement.textContent = editProfileDescriptionInput.value;
-  editProfileModal.classList.remove("modal_is-opened");
+
+  function closeModal(editProfileModal) {
+ closeModal(editProfileModal);
+}
+
 }
 
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
@@ -99,13 +103,13 @@ function handleNewPostSubmit(e) {
 
   cardsList.prepend(newCardElement);
   newPostForm.reset();
-  newPostModal.classList.remove("modal_is-opened");
+  closeModal(newPostModal);
 }
 
 newPostForm.addEventListener("submit", handleNewPostSubmit);
 
 newPostButton.addEventListener("click", function () {
-  newPostModal.classList.add("modal_is-opened");
+  openModal(newPostModal);
 });
 
 newPostCloseButton.addEventListener("click", function () {

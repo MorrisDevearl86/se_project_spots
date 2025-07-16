@@ -50,13 +50,13 @@
 }
 
 .card__like-button_active {
-background-image: url("../images/heart-Union_liked.svg");
+  background-image: url("../images/heart-Union_liked.svg");
   cursor: pointer;
   background-color: transparent;
   opacity: 1;
 }
 
-.card__like-button_active:hover{
+.card__like-button_active:hover {
   opacity: 40%;
   cursor: pointer;
 }
@@ -64,7 +64,7 @@ background-image: url("../images/heart-Union_liked.svg");
 .card__delete-button {
   position: absolute;
   background-image: url("../images/delete_icon_default-white1.svg");
-  position:absolute;
+  position: absolute;
   background-color: transparent;
   border: none;
   width: 32px;
@@ -95,7 +95,6 @@ background-image: url("../images/heart-Union_liked.svg");
 /*↓ This is for Smartphone(s) and Tablet(s) ↓*/
 
 @media screen and (max-width: 627px) {
-
   .card {
     width: 288px;
   }
