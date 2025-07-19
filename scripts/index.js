@@ -68,13 +68,7 @@ function handleEditProfileSubmit(e) {
   e.preventDefault();
 
   profileNameElement.textContent = editProfileNameInput.value;
-  profileDescriptionElement.textContent = editProfileDescriptionInput.value;
-
-  function closeModal(editProfileModal) {
- closeModal(editProfileModal);
-}
-
-}
+  profileDescriptionElement.textContent = editProfileDescriptionInput.value;}
 
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
 
@@ -113,7 +107,7 @@ newPostButton.addEventListener("click", function () {
 });
 
 newPostCloseButton.addEventListener("click", function () {
-  newPostModal.classList.remove("modal_is-opened");
+  closeModal(newPostModal);
 });
 
 // ↓ Modal cards template ↓
