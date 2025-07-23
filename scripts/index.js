@@ -68,7 +68,7 @@ closeModal(editProfileModal);
   e.preventDefault();
 
   profileNameElement.textContent = editProfileNameInput.value;
-  profileDescriptionElement.textContent = editProfileDescriptionInput.value;}
+  profileDescriptionElement.textContent = editProfileDescriptionInput.value;
 
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
 
