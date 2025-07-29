@@ -64,13 +64,12 @@ editProfileCloseButton.addEventListener("click", function () {
   editProfileModal.classList.remove("modal_is-opened");
 });
 
-closeModal(editProfileModal);
+function handleEditProfileSubmit(e) {
   e.preventDefault();
-
   profileNameElement.textContent = editProfileNameInput.value;
   profileDescriptionElement.textContent = editProfileDescriptionInput.value;
-
-editProfileForm.addEventListener("submit", handleEditProfileSubmit);
+  closeModal(editProfileModal);
+}
 
 // ↓ Modal + new post profile inputs ↓
 
