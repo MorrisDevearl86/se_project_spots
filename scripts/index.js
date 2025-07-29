@@ -70,6 +70,7 @@ function handleEditProfileSubmit(e) {
   profileDescriptionElement.textContent = editProfileDescriptionInput.value;
   closeModal(editProfileModal);
 }
+editProfileForm.addEventListener("submit", handleEditProfileSubmit);
 
 // ↓ Modal + new post profile inputs ↓
 
