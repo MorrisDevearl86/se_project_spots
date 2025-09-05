@@ -108,6 +108,12 @@
   cursor: pointer;
 }
 
+.modal__error{
+display: block ;
+color: darkred;
+visibility: ;
+}
+
 .modal__input::placeholder {
   color: #2121214d;
 }

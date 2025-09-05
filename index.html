@@ -89,8 +89,11 @@
                 type="text"
                 class="modal__input"
                 placeholder="Type your name"
+                minlength="2"
+                maxlength="40"
                 required
               />
+              <span class="modal__error">error message!!!</span>
             </label>
             <label for="profile-description-input" class="modal__label">
               Description
@@ -99,7 +102,11 @@
                 type="text"
                 class="modal__input"
                 placeholder="Describe yourself"
+                minlength="2"
+                maxlength="290"
+                required
               />
+              <span class="modal__error"> error message!!!</span>
             </label>
             <button
               aria-label="submit-input"
@@ -133,7 +140,9 @@
                 type="url"
                 class="modal__input"
                 placeholder="Paste a link to the picture"
-              />
+                required
+                 />
+                 <span class="modal__error"> error message!!!</span>
             </label>
             <label for="description-input" class="modal__label">
               Caption
@@ -142,7 +151,11 @@
                 type="text"
                 class="modal__input"
                 placeholder="Type your caption"
+                minlength="2"
+                maxlength="30"
+                required
               />
+              <span class="modal__error"> error message!!!</span>
             </label>
             <button
               aria-label="Save"
