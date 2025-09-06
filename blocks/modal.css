@@ -111,7 +111,7 @@
 .modal__error{
 display: block ;
 color: darkred;
-visibility: ;
+visibility: hidden;
 }
 
 .modal__input::placeholder {
