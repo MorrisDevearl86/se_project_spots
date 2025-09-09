@@ -102,6 +102,10 @@
   border-radius: 8px;
 }
 
+.modal__input_type_error {
+  border: 1px solid #FF000099;
+}
+
 .modal__input:hover {
   border-color: #212121;
   box-shadow: 0 0 6px rgba(33, 33, 33, 0.2);
