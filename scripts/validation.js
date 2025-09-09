@@ -32,6 +32,8 @@ const toggleButtonState = (inputList, buttonElement) => {
   buttonElement.disabled = false;
   //add a modifier class to the button if there is at least one invalid input
 //Don't forget the CSS
+};
+
 
 const setEventListeners = (formElement) => {
   const inputList = Array.from(formElement.querySelectorAll(".modal__input"));
@@ -46,6 +48,8 @@ const setEventListeners = (formElement) => {
     });
   });
 
+  const disabledButton= (buttonElement) => {
+    buttonElement.disabled = true;
 
 const enableValidation = () => {
   const formList = document.querySelectorAll(".modal__form");

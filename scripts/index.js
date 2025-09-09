@@ -97,6 +97,7 @@ function handleNewPostSubmit(e) {
 
   cardsList.prepend(newCardElement);
   newPostForm.reset();
+  toggleButtonState();
   closeModal(newPostModal);
 }
 
