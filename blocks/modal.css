@@ -72,8 +72,8 @@
 
 .modal__title {
   margin: 0 0 32px;
-  width: 169;
-  height: 32;
+  width: 169px;
+  height: 32px;
   font-family: "Poppins", "Arial", sans-serif;
   font-weight: 500;
   font-size: 32px;
@@ -112,15 +112,15 @@
   cursor: pointer;
 }
 
-.modal__error{
-  font-family: Poppins;
-font-weight: 500;
-font-style: Medium;
-font-size: 16px;
-line-height: 110.00000000000001%;
-display: block ;
-color: darkred;
-/* visibility: hidden; */
+.modal__error {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 110%;
+  display: block;
+  color: darkred;
+  visibility: hidden;
 }
 
 
