@@ -1,4 +1,4 @@
-// ↓ Card Data ↓
+ // ↓ Card Data ↓
 
 const initialCards = [
   {
@@ -59,7 +59,8 @@ editProfileButton.addEventListener("click", function () {
   editProfileDescriptionInput.value = profileDescriptionElement.textContent;
   // OPTIONAL: reset form validation state
 
-  resetValidation(editProfileForm,[nameInput, editProfileDescriptionInput]);openModal(editProfileModal);
+  resetValidation([editProfileForm,editProfileNameInput, editProfileDescriptionInput]);
+  openModal(editProfileModal);
   editProfileModal.classList.add("modal_is-opened");
 });
 
