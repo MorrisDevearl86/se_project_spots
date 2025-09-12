@@ -26,15 +26,16 @@ const hasInvalidInput = (inputList) => {
   }) ;
 } ;
 
-const toggleButtonState = (inputList, buttonElement) => {
+const toggleButtonState = (inputList, buttonElement, settings) => {
   if (hasInvalidInput(inputList)) {
-    buttonElement.classList.add("modal__submit-button_enabled");
+    buttonElement.classList.add(settings.inactiveButtonClass);
     buttonElement.disabled = true;
   } else {
-    buttonElement.classList.remove("modal__submit-button_disabled");
+    buttonElement.classList.remove(settings.inactiveButtonClass);
     buttonElement.disabled = false;
   }
-} ;
+};
+
 const setEventListeners = (formElement) => {
   const inputList = Array.from(
     formElement.querySelectorAll(".modal__input")
@@ -61,14 +62,11 @@ const enableValidation = () => {
   }) ;
 } ;
 
-const settings = {
-  formSelector: ".modal__form",
-  inputSelector: ".modal__input",
-  submitButtonSelector: ".modal__button",
-  inactiveButtonClass: "modal__button_disabled",
-  inputErrorClass: "modal__input_type_error",
-  errorClass: "modal__error_visible"
-};
+function validateForm(settings) {
+  const form = document.querySelector(settings.formSelector);
+  const button = form.querySelector(settings.submitButtonSelector);
+  button.classList.add(settings.inactiveButtonClass);
+}
 
 enableValidation(settings) ;
 
@@ -86,3 +84,4 @@ const resetValidation = (formElement, inputList) => {
 
   toggleButtonState(inputList, buttonElement);
 } ;
+
