@@ -29,6 +29,7 @@
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
 }
 
@@ -45,6 +46,7 @@
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  line-clamp: 3; /* Add this line for standard support */
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
 }
@@ -54,7 +56,6 @@
   background: none;
   border: none;
   gap: 8px;
-
   display: flex;
   padding: 0;
   width: 107.34px;
