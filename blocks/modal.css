@@ -59,7 +59,7 @@
 .modal__caption {
   font-family: "Poppins", "Arial", Helvetica, sans-serif;
   background-color: #212121;
-  color:#fff;
+  color: #fff;
   padding: 8px;
   width: fit-content;
   text-align: left;
@@ -67,7 +67,6 @@
   font-size: 20px;
   line-height: 120%;
   border-radius: 8px;
-
 }
 
 .modal__title {
@@ -103,7 +102,7 @@
 }
 
 .modal__input_type_error {
-  border: 1px solid #FF000099;
+  border: 1px solid #ff000099;
 }
 
 .modal__input:hover {
@@ -122,7 +121,6 @@
   color: darkred;
   visibility: hidden;
 }
-
 
 .modal__input::placeholder {
   color: #2121214d;
@@ -148,7 +146,7 @@
 /* ↓ For the preview of Images ↓ */
 
 .modal__container {
-position: relative;
+  position: relative;
 }
 
 .modal__close_type_preview {
@@ -160,10 +158,10 @@ position: relative;
   padding: 0px;
   border: none;
   background: url("../images/close_button_modal-1=default-preview.svg");
-    display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  }
+}
 
 .modal__close_type_preview:hover {
   opacity: 40%;
@@ -174,7 +172,6 @@ position: relative;
 .modal__image-container {
   position: relative;
 }
-
 
 .modal__image {
   max-width: 80vw;
@@ -188,7 +185,6 @@ position: relative;
 /* ↓ Media query ↓ */
 
 @media screen and (max-width: 480px) {
-
   .modal {
     padding: 0 10px;
   }
@@ -215,40 +211,37 @@ position: relative;
     width: 100%;
   }
 
-/* ↓ preview modal for images ↓ */
+  /* ↓ preview modal for images ↓ */
 
-.modal__close_type_preview {
-     top: -36px;
+  .modal__close_type_preview {
+    top: -36px;
     right: 0;
     width: 32px;
     height: 32px;
     padding: 0px;
   }
 
- .modal__image {
-  max-height: none;
+  .modal__image {
+    max-height: none;
     max-width: none;
     width: 100%;
   }
 
-.modal__caption {
+  .modal__caption {
     font-size: 12px;
   }
 
-  .modal__image{
+  .modal__image {
     max-width: unset;
   }
 }
 
 @media screen and (max-width: 627px) {
-
   .modal__close_type_preview {
-     top: -36px;
+    top: -36px;
     right: 0;
     width: 32px;
     height: 32px;
     padding: 0px;
   }
-
-
 }
