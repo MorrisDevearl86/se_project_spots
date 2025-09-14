@@ -184,4 +184,4 @@ function handleEscClose(e) {
 initialCards.forEach((cardItem) => {
   const cardElement = getCardElement(cardItem);
   cardsList.append(cardElement);
-});
+}); 

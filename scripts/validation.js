@@ -115,6 +115,6 @@ function enableValidation(config = settings) {
 
 enableValidation(settings);
 
-// -------------------------------------------------------------------------------
+// ---------------------------------------------------------------
 // The rest of the code is from scripts/index.js for context
 // ---------------------------------------------------------------

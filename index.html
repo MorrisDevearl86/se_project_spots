@@ -81,7 +81,7 @@
           <!-- Edit Post Modal -->
 
           <h3 class="modal__title">Edit Profile</h3>
-          <form class="modal__form" id="edit-profile-form">
+          <form class="modal__form" id="edit-profile-form"novalidate>
             <label for="profile-name-input" class="modal__label">
               Name
               <input
@@ -93,7 +93,7 @@
                 maxlength="40"
                 required
               />
-              <span id="profile-name-input-error" class="modal__error"></span>
+              <span id="profile-name-input-error" class="modal__error">Please fill out this field.</span>
             </label>
             <label for="profile-description-input" class="modal__label">
               Description
@@ -135,7 +135,7 @@
           <!-- New Post Modal Form -->
 
           <h3 class="modal__title">New Post</h3>
-          <form class="modal__form" id="add-card-modal">
+          <form class="modal__form" id="add-card-modal"novalidate>
             <label for="card-image-input" class="modal__label"
               >Image link
               <input
