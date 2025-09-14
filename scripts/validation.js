@@ -21,9 +21,9 @@ const hideInputError = (formElement, inputElement, config) => {
 
   inputElement.classList.remove(config.inputErrorClass);
   inputElement.removeAttribute("aria-invalid");
-  inputElement.removeAttribute("aria-describedby");
+  inputElement.removeAttribute("aria-described");
 
-  errorElement.textContent = "";
+  errorElement.textContent = "what is this???";
   errorElement.classList.remove(config.errorClass);
 };
 
