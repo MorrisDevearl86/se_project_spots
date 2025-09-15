@@ -56,6 +56,7 @@ const profileDescriptionElement = document.querySelector(
 editProfileButton.addEventListener("click", () => {
   editProfileNameInput.value = profileNameElement.textContent;
   editProfileDescriptionInput.value = profileDescriptionElement.textContent;
+  resetValidation(editProfileForm, settings);
   openModal(editProfileModal);
 });
 
@@ -94,6 +95,9 @@ function handleNewPostSubmit(e) {
   cardsList.prepend(newCardElement);
   newPostForm.reset();
   closeModal(newPostModal);
+
+  // Disable the button & clear errors after reset
+  resetValidation(newPostForm, settings);
 }
 
 newPostForm.addEventListener("submit", handleNewPostSubmit);
