@@ -102,7 +102,7 @@
 }
 
 .modal__input_type_error {
-  border: 1px solid #FF000099;
+  border: 1px solid #ff000099;
 }
 
 .modal__input:hover {
@@ -137,6 +137,17 @@
   font-weight: 500;
   line-height: 100%;
 }
+
+.modal__submit-button.modal__button_disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/*.modal__error_visible {
+  visibility: visible;
+}*/
 
 .modal__submit-button:hover {
   opacity: 0.8;
